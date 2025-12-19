@@ -90,12 +90,34 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    background-color: hsl(var(--background));
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: var(--font-sans);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: hsl(var(--background));
+  }
+  
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  /* Prevent horizontal overflow on all sections */
+  section {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
   }
   
   img, video {
@@ -171,6 +193,8 @@
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* Text shadow for hero */

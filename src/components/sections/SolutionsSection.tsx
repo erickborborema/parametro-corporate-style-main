@@ -68,11 +68,12 @@ export const SolutionsSection = () => {
         </motion.div>
 
         {/* Solutions Cards - Horizontal Scrollable Carousel */}
-        <div className="relative">
+        <div className="relative w-full overflow-x-hidden">
           {/* Scrollable Container */}
           <div 
             ref={scrollContainerRef}
             className="overflow-x-auto overflow-y-hidden scrollbar-hide scroll-snap-x pb-4 md:pb-0"
+            style={{ WebkitOverflowScrolling: 'touch' }}
           >
             <div className="flex gap-6 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 px-4 md:px-0">
               {siteConfig.solutions.map((solution, index) => {

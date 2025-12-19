@@ -19,9 +19,9 @@ export const Layout = ({ children, seo }: LayoutProps) => {
   return (
     <>
       <SEO {...seo} />
-      <div className="min-h-screen flex flex-col bg-background">
+      <div className="min-h-screen flex flex-col bg-background w-full max-w-full overflow-x-hidden">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 w-full max-w-full overflow-x-hidden">
           {children}
         </main>
         <Footer />

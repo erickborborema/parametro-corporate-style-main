@@ -122,13 +122,13 @@ export const ClientsSection = () => {
           </p>
         </motion.div>
 
-        {/* Clients Marquee */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="relative overflow-hidden py-8"
-        >
+                {/* Clients Marquee */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="relative overflow-hidden py-8 w-full"
+                >
           {/* Gradient overlays */}
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
